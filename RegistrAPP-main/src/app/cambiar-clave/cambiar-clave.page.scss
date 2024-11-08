@@ -1,0 +1,48 @@
+/* Estilo general del ion-content */
+ion-content {
+  --background: #f4f4f4; /* Fondo gris claro para el contenido */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el toolbar */
+ion-toolbar {
+  --background: #1388e7; /* Color de fondo azul */
+  --color: white; /* Texto blanco para el título */
+}
+
+/* Estilo para los botones en el toolbar */
+ion-back-button {
+  --color: white; /* Botón de retroceso en blanco */
+}
+
+/* Clase para centrar el contenido */
+.centrar-contenido {
+  display: flex; /* Usar flexbox para centrar */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  height: 100%; /* Tomar todo el alto disponible */
+}
+
+/* Estilo para el texto informativo */
+.texto {
+  font-size: 16px; /* Tamaño de texto */
+  color: #333; /* Color gris oscuro */
+  text-align: center; /* Centrar texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el botón */
+ion-button {
+  --background: #F9A825; /* Color de fondo del botón */
+  --color: white; /* Color del texto en el botón */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de texto del botón */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto hover en el botón */
+ion-button:hover {
+  --background: #d89417; /* Color de fondo al pasar el mouse */
+}

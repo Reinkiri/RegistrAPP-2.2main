@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Generar QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Escanea este código QR para registrar asistencia</h2>
+  <qrcode [qrdata]="qrdata" [width]="350"></qrcode>
+</ion-content>

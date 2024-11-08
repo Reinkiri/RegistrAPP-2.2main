@@ -1,0 +1,55 @@
+/* Estilo general del ion-content */
+ion-content {
+  --background: white; /* Fondo blanco para el contenido */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el toolbar */
+ion-toolbar {
+  --background: #ccccca; /* Color de fondo gris claro */
+}
+
+/* Estilo para el título en el toolbar */
+ion-title {
+  color: #333; /* Color del texto en gris oscuro */
+}
+
+/* Estilo para el botón de cerrar sesión */
+ion-button {
+  --color: white; /* Color del texto en blanco */
+  --background: #f44336; /* Color de fondo rojo para el botón de cerrar sesión */
+  border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Estilo para el contenedor de botones */
+.buttons-container {
+  margin-top: 20px; /* Margen superior para separar de los elementos anteriores */
+}
+
+/* Estilo para los botones */
+ion-button {
+  --background: #1388e7; /* Color de fondo azul */
+  --color: white; /* Color del texto en blanco */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: 5px 0; /* Margen vertical entre botones */
+  font-size: 16px; /* Tamaño de texto del botón */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto hover en los botones */
+ion-button:hover {
+  --background: #0f6fbf; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+ion-footer {
+  --background: #f9f9f9; /* Fondo gris claro para el pie de página */
+}
+
+/* Estilo para el texto en el pie de página */
+.app-name {
+  color: #000000; /* Color azul para el nombre de la app */
+  font-size: 14px; /* Tamaño de texto del pie de página */
+  margin: 10px 0; /* Margen superior e inferior */
+  font-weight: bold; /* Texto en negrita */
+}

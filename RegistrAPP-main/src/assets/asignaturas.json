@@ -1,0 +1,20 @@
+{"asignaturas": [
+    {
+      "id": "EAY4450",
+      "nombre": "Ética para el trabajo",
+      "seccion": "003D",
+      "profesor_id": "4"
+    },
+    {
+      "id": "MAT4140",
+      "nombre": "Estadística descriptiva",
+      "seccion": "006D",
+      "profesor_id": "2"
+    },
+    {
+      "id": "PGY4121",
+      "nombre": "Programación móvil",
+      "seccion": "004D",
+      "profesor_id": "3"
+    }
+  ]}

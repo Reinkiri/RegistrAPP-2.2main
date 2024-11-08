@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar style="--background: #ccccca;">
+    <ion-title slot="start">Menú</ion-title>
+    <ion-button expand="block" color="secondary" slot="end" (click)="logout()">
+      Cerrar Sesión
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="--background: white;">
+  <ion-item lines="none" style="text-align: center;">
+    <ion-label style="display: flex; flex-direction: column; align-items: center;">
+      <h1 class="welcome-title">¡Saludos!</h1>
+      <p class="welcome-subtitle">Bienvenido, <strong>{{ usuario?.nombre }}</strong></p>
+    </ion-label>
+  </ion-item>
+
+  <div class="buttons-container">
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/mis-asignaturas']">
+      Mis asignaturas
+    </ion-button>
+
+    <!-- Mostrar botón "Revisar asistencia" solo para profesores -->
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/revisar-asistencias']">
+      Revisar asistencia
+    </ion-button>
+
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/cambiar-clave']">
+      Cambiar clave
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p class="ion-text-center app-name">RegistrAPP</p>
+  </ion-toolbar>
+</ion-footer>

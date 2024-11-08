@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/Logo_DuocUC.svg.png" class="ion-margin-start " alt="Logo DuocUC">
+    <h1 class="app-title text-black ion-margin-end" slot="end" >RegistAPP</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+  
+  <br><br>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+          <h4>Ingrese su Usuario:</h4>
+          <ion-input type="text" placeholder="Usuario:" [(ngModel)]="correo" class="text-black"></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+          <h4>Ingrese su Contraseña:</h4>
+          <ion-input type="password" placeholder="Contraseña:" [(ngModel)]="contrasena" class="text-black"></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+          <ion-button shape="round" (click)="login()" class="text-white">Iniciar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-text-center" style="margin-top: 20px;">
+    <h4>¿Olvidaste tu contraseña?</h4>
+    <ion-button expand="full" (click)="mostrarRestablecerContrasena()" class="text-white">Restablecer Contraseña</ion-button>
+  </div>
+
+  <div *ngIf="restablecerVisible" class="ion-text-center" style="margin-top: 20px;">
+    <h4>Ingrese su Correo Electrónico:</h4>
+    <ion-input type="email" placeholder="Correo electrónico" [(ngModel)]="correoRestablecer"></ion-input>
+    <ion-button expand="full" (click)="enviarCorreo()">Enviar Correo</ion-button>
+  </div>
+</ion-content>
+

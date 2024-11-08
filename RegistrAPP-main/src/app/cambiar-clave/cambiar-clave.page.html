@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cambiar clave</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding centrar-contenido">
+  <div class="texto">
+    Al presionar el botón "Continuar", se le enviará un correo para restablecer la contraseña a su correo institucional.
+  </div>
+  <br><br>
+  <div class="ion-text-center">
+    <ion-button (click)="continuar()">Continuar</ion-button>
+  </div>
+</ion-content>

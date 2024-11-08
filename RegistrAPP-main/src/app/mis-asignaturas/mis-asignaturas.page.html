@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-grid>
+      <ion-row class="header">
+        <ion-col size="3" class="text-small">Código</ion-col>
+        <ion-col size="3" class="text-small">Nombre</ion-col>
+        <ion-col size="3" class="text-small">Sección</ion-col>
+        <ion-col size="3" class="text-small">Profesor</ion-col>
+      </ion-row>
+      <br>
+      <ion-row *ngFor="let i of asignaturas">
+        <ion-col size="3" class="text-small">{{ i.codigo }}</ion-col>
+        <ion-col size="3" class="text-small">{{ i.nombre }}</ion-col>
+        <ion-col size="3" class="text-small">{{ i.seccion }}</ion-col>
+        <ion-col size="3" class="text-small">{{ i.profesor }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,59 @@
+/* Fondo general del contenido */
+ion-content {
+  --background: #f4f4f4; /* Fondo gris claro para el contenido */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el toolbar */
+ion-toolbar {
+  --background: #1388e7; /* Color de fondo azul */
+  --color: white; /* Texto blanco para el título */
+}
+
+/* Estilo para los botones en el toolbar */
+ion-back-button {
+  --color: white; /* Botón de retroceso en blanco */
+}
+
+/* Estilo para la cabecera de la tabla */
+.header {
+  background-color: #f0f0f0; /* Fondo gris claro para la cabecera */
+  padding: 10px 0; /* Espaciado superior e inferior */
+  font-weight: bold; /* Letras en negrita */
+  text-align: center; /* Centrar texto en columnas */
+}
+
+/* Estilo para las filas de datos */
+ion-row {
+  align-items: center; /* Alinear verticalmente los elementos al centro */
+  padding: 10px 0; /* Espaciado interno */
+  border-bottom: 1px solid #e0e0e0; /* Líneas divisorias entre filas */
+}
+
+/* Estilo para el contenido de cada columna */
+ion-col {
+  text-align: center; /* Centrar texto en columnas */
+}
+
+/* Texto pequeño */
+.text-small {
+  font-size: 14px; /* Tamaño de texto pequeño */
+  color: #333; /* Texto en color gris oscuro */
+}
+
+/* Resaltar las cabeceras */
+.header ion-col {
+  color: #444; /* Color oscuro para las cabeceras */
+  font-size: 16px; /* Tamaño de texto un poco mayor */
+}
+
+/* Espacio entre las filas */
+ion-row + ion-row {
+  margin-top: 5px;
+}
+
+/* Efecto hover en las filas de datos */
+ion-row:hover {
+  background-color: #e8f0fe; /* Cambio de fondo al pasar el mouse */
+  transition: background-color 0.3s ease; /* Transición suave */
+}

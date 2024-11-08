@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="header">
+        <ion-col size="3" class="text-small">Fecha</ion-col>  
+        <ion-col size="5" class="text-small">Asignatura</ion-col>    
+        <ion-col size="4" class="text-small">Presente</ion-col>  
+    </ion-row>
+    <br>
+    <ion-row *ngFor="let i of asistencias">
+      <ion-col size="3" class="text-small">{{ i.fecha | date:'dd/MM/yyyy' }}</ion-col>
+      <ion-col size="5" class="text-small">{{ i.nombreAsig }}</ion-col>
+      <ion-col size="4" class="text-small">{{ i.presente ? 'Sí' : 'No' }}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

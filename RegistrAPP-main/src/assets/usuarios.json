@@ -1,0 +1,69 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "tipo": "alumno",
+      "correo": "alumno1@example.cl",
+      "contrasena": "contraseña1",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "asignaturas_inscritas": ["EAY4450", "MAT4140", "PGY4121"]
+    },
+    {
+      "id": "2",
+      "tipo": "profesor",
+      "correo": "JaBon@duocuc.cl",
+      "contrasena": "contraseñaP",
+      "nombre": "Javier",
+      "apellido": "Bonifacio"
+    },
+    {
+      "id": "3",
+      "tipo": "profesor",
+      "correo": "patriYa@duocuc.cl",
+      "contrasena": "contraseñaaaaP",
+      "nombre": "Patricio",
+      "apellido": "Yañez"
+    },
+    {
+      "id": "4",
+      "tipo": "profesor",
+      "correo": "SaCar@duocuc.cl",
+      "contrasena": "contraseñaaP",
+      "nombre": "Samuel",
+      "apellido": "Cárdenaz"
+    }
+  ],
+  
+  "asistencias": [
+    {
+      "id": "1",
+      "alumno_id": "1",
+      "asignatura_id": "PGY4121",
+      "fecha": "2024-10-29",
+      "estado": "presente"
+    },
+    {
+      "id": "2",
+      "alumno_id": "1",
+      "asignatura_id": "PGY4121",
+      "fecha": "2024-10-30",
+      "estado": "ausente"
+    },
+    {
+      "id": "3",
+      "alumno_id": "1",
+      "asignatura_id": "PGY4121",
+      "fecha": "2024-11-04",
+      "estado": "ausente"
+    },
+    {
+      "id": "4",
+      "alumno_id": "1",
+      "asignatura_id": "PGY4121",
+      "fecha": "2024-11-05",
+      "estado": "presente"
+    }
+  ]
+}
+  

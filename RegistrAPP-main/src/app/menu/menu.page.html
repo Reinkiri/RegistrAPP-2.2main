@@ -1,0 +1,41 @@
+<div class="ion-page" id="main-content"></div>
+<ion-header>
+  <ion-toolbar style="--background: #ccccca;"> <!-- Barra superior con fondo gris claro -->
+    <ion-title slot="start">Menú</ion-title>
+    <ion-button expand="block" color="secondary" slot="end" (click)="logout()">
+      Cerrar Sesión
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="--background: white;"> <!-- Fondo blanco -->
+  <ion-item lines="none" style="text-align: center;">
+    <ion-label style="display: flex; flex-direction: column; align-items: center;">
+      <h1 class="welcome-title">¡Saludos!</h1>
+      <p class="welcome-subtitle">Bienvenido, <strong>{{ usuario?.nombre }}</strong></p>
+    </ion-label>
+  </ion-item>
+
+  <div class="buttons-container"> <!-- Contenedor para centrar botones -->
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/mis-asignaturas']">
+      Mis asignaturas
+    </ion-button>
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/mis-asistencias']">
+      Mis asistencias
+    </ion-button>
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/registrar-asistencias']">
+      Registrar asistencias
+    </ion-button>
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/cambiar-clave']">
+      Cambiar clave
+    </ion-button>
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/scanner']">
+      Scanear
+    </ion-button>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p class="ion-text-center app-name">RegistrAPP</p>
+  </ion-toolbar>
+</ion-footer>
