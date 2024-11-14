@@ -23,6 +23,7 @@ const routes: Routes = [
     loadChildren: () => import('./mis-asistencias/mis-asistencias.module').then( m => m.MisAsistenciasPageModule),
     canActivate: [AuthGuard]
   },
+  
   {
     path: 'registrar-asistencias',
     loadChildren: () => import('./registrar-asistencias/registrar-asistencias.module').then( m => m.RegistrarAsistenciasPageModule)
@@ -43,14 +44,22 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'qr',
-    loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
+    path: 'asistencia-detalle/:id',
+    loadChildren: () => import('./asistencia-detalle/asistencia-detalle.module').then( m => m.AsistenciaDetallePageModule)
   },
   {
-    path: 'scanner',
-    loadChildren: () => import('./scanner/scanner.module').then( m => m.ScannerPageModule)
+    path: 'revisar-asistencias',
+    loadChildren: () => import('./revisar-asistencias/revisar-asistencias.module').then( m => m.RevisarAsistenciasPageModule)
   },
-  
+  {
+    path: 'revisar-asistencias',
+    loadChildren: () => import('./revisar-asistencias/revisar-asistencias.module').then( m => m.RevisarAsistenciasPageModule)
+  },
+  {
+    path: 'asistencia-detalle',
+    loadChildren: () => import('./asistencia-detalle/asistencia-detalle.module').then( m => m.AsistenciaDetallePageModule)
+  },
+
 ];
 
 @NgModule({
@@ -60,3 +69,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

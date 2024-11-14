@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Revisar Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div id="qrImage">
+      <div class="qr-wrapper">
+        <qr-code [value]="qrText" size="300" errorCorrectionLevel="M"></qr-code>
+      </div>
+    </div>
+
+    <div class="ion-padding-top">{{ qrText }}</div>
+
+    <!-- Selección de asignatura -->
+    <ion-item>
+      <ion-label position="stacked">Selecciona asignatura</ion-label>
+      <ion-select [(ngModel)]="asignaturaId" placeholder="Elige una asignatura">
+        <ion-select-option *ngFor="let asignatura of asignaturas" [value]="asignatura.id">
+          {{ asignatura.nombre }} ({{ asignatura.id }})
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Input para ingresar la fecha -->
+    <ion-item>
+      <ion-label position="stacked">Ingresa fecha (YYYY-MM-DD)</ion-label>
+      <ion-input type="date" [(ngModel)]="fecha" placeholder="YYYY-MM-DD"></ion-input>
+    </ion-item>
+
+    <!-- Botón para generar el QR -->
+    <ion-button expand="block" (click)="mostrarConfirmacion()">Generar QR</ion-button>
+  </div>
+</ion-content>

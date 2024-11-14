@@ -12,7 +12,14 @@
     <img src="assets/ejemploQR.jpg" alt="QR para registrar asistencias">
   </div>
   <br><br>
-  <div class="ion-text-center">
-    <ion-button>Continuar</ion-button>
+  <div class="ion-text-center submit">
+    <ion-button (click)="startScan()" class="submit" expand="block">Escanear
+      <ion-icon slot="end" name="scan-outline"></ion-icon>
+    </ion-button>
   </div>
+  <ion-item class="result" *ngIf="scanResult" lines="none">
+    <ion-label>
+      <p>Scan Result</p>
+      <div>{{scanResult}}</div></ion-label>
+  </ion-item>
 </ion-content>

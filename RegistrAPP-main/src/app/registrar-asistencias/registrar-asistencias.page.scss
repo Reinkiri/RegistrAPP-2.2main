@@ -1,52 +1,51 @@
 /* Fondo general del contenido */
 ion-content {
-    --background: #f4f4f4; /* Fondo gris claro para el contenido */
-    padding: 20px; /* Espaciado interno */
-  }
-  
-  /* Estilo para el toolbar */
-  ion-toolbar {
-    --background: #1388e7; /* Color de fondo azul */
-    --color: white; /* Texto blanco para el título */
-  }
-  
-  /* Estilo para los botones en el toolbar */
-  ion-back-button {
-    --color: white; /* Botón de retroceso en blanco */
-  }
-  
-  /* Contenedor para la imagen QR */
-  .image-container {
-    display: flex; /* Usar flexbox para centrar */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente si es necesario */
-    margin: 20px 0; /* Margen superior e inferior */
-  }
-  
-  /* Estilo para la imagen QR */
-  img {
-    max-width: 80%; /* Ajustar el ancho máximo de la imagen */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  }
-  
-  /* Estilo para el botón de continuar */
-  ion-button {
-    --background: #F9A825; /* Color amarillo suave para el botón */
-    --color: white; /* Texto blanco */
-    --border-radius: 20px; /* Bordes redondeados */
-    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    font-size: 18px; /* Tamaño de fuente del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    margin-top: 20px; /* Margen superior */
-  }
-  
-  /* Centrando el contenido */
-  .ion-text-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+  --background: #f4f4f4; /* Fondo gris claro para el contenido */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el toolbar */
+ion-toolbar {
+  --background: #1388e7; /* Color de fondo azul */
+  --color: white; /* Texto blanco para el título */
+}
+
+/* Estilo para los botones en el toolbar */
+ion-back-button {
+  --color: white; /* Botón de retroceso en blanco */
+}
+
+/* Contenedor para la imagen QR */
+.image-container {
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente si es necesario */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para la imagen QR */
+img {
+  max-width: 80%; /* Ajustar el ancho máximo de la imagen */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para el botón de continuar */
+ion-button {
+  --background: #F9A825; /* Color amarillo suave para el botón */
+  --color: white; /* Texto blanco */
+  --border-radius: 20px; /* Bordes redondeados */
+  --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  font-size: 18px; /* Tamaño de fuente del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Centrando el contenido */
+.ion-text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

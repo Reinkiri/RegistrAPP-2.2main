@@ -1,6 +1,5 @@
-<div class="ion-page" id="main-content"></div>
 <ion-header>
-  <ion-toolbar style="--background: #ccccca;"> <!-- Barra superior con fondo gris claro -->
+  <ion-toolbar style="--background: #ccccca;">
     <ion-title slot="start">Menú</ion-title>
     <ion-button expand="block" color="secondary" slot="end" (click)="logout()">
       Cerrar Sesión
@@ -8,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding" style="--background: white;"> <!-- Fondo blanco -->
+<ion-content class="ion-padding" style="--background: white;">
   <ion-item lines="none" style="text-align: center;">
     <ion-label style="display: flex; flex-direction: column; align-items: center;">
       <h1 class="welcome-title">¡Saludos!</h1>
@@ -16,7 +15,8 @@
     </ion-label>
   </ion-item>
 
-  <div class="buttons-container"> <!-- Contenedor para centrar botones -->
+  <!-- Asegúrate de que este contenedor esté correctamente abierto y cerrado -->
+  <div class="buttons-container">
     <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/mis-asignaturas']">
       Mis asignaturas
     </ion-button>
@@ -29,13 +29,15 @@
     <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/cambiar-clave']">
       Cambiar clave
     </ion-button>
-    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/scanner']">
-      Scanear
+    <ion-button expand="block" class="text-white" style="--background: #1388e7; --color: white;" [routerLink]="['/scanner']" >
+      Escanear QR
     </ion-button>
   </div>
 </ion-content>
+
 <ion-footer>
   <ion-toolbar>
     <p class="ion-text-center app-name">RegistrAPP</p>
   </ion-toolbar>
 </ion-footer>
+
